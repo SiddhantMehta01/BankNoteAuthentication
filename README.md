@@ -22,3 +22,52 @@ We use postman, steps to be followed:
 1. Set the hyperlink
 2. Select the method as "POST"
 3. Go to "Body" => "form-data" => Change "text" to "file"
+
+To create a environment:
+
+```
+    conda create -p venv_bank python==3.7 -y
+```
+
+To activate environment:
+
+```
+    conda activate venv_bank/
+```
+
+To run flassger:
+
+```
+    python app_flassger.py
+    On browser: http://127.0.0.1:5000/apidocs/
+```
+
+To run streamlit:
+
+```
+    streamlit run app_streamlit.py
+```
+
+To build a docker image:
+
+```
+    docker built -t name_of_api .
+```
+
+To see docker built:
+
+```
+    docker ps
+```
+
+To run docker:
+
+```
+    docker run -p 8080:8080 name_of_api
+```
+
+For browsing, browse using:
+
+```
+    IP_of_docker:port_no/apidocs
+```
